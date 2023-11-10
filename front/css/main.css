@@ -1,0 +1,10 @@
+@charset "utf-8";/* 헤더 */
+#header { position: fixed; z-index: 999; width: 100%; left: 0; top: 0; transition: all 0.3s; display:block;} 
+#header .header { max-width: 80rem; margin: 0 auto; display: block; } 
+#header .header .inner { max-width: 100%; display: flex; align-items: center; justify-content: space-between; padding: 0 10px; } 
+#header .header .inner .logo a { color: #000; font-family: SUITE; font-size: 20px; font-style: normal; font-weight: 900; line-height: normal; letter-spacing: -0.75px; } 
+#header .header .inner .gnb { display: block; height: 100%; } 
+#header .header .inner .nav { display: flex; align-items: center; height: 100%; gap: 1.875rem; }
+#header .header .inner .nav .menu { height: 100%;padding: 20px 0;} 
+#header .header .inner .nav .menu a { color: #000;text-align: center; font-family: Pretendard Variable; font-size: 16px; font-style: normal; font-weight: 700;letter-spacing: -0.18px; text-transform: capitalize; transition: all 0.2s; } 
+#header .header .inner .nav .menu:hover a{color: #064001;}
