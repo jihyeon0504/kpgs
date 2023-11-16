@@ -1,14 +1,14 @@
 
 // header
-$(function () {
-    $(window).scroll(function () {
-        if ($(document).scrollTop() > 30) {
-            $(".header").addClass('fixed')
-        } else {
-            $(".header").removeClass('fixed')
-        };
-    })
-})
+// $(function () {
+//     $(window).scroll(function () {
+//         if ($(document).scrollTop() > 30) {
+//             $(".header").addClass('fixed')
+//         } else {
+//             $(".header").removeClass('fixed')
+//         };
+//     })
+// })
 $(function(){
        // $(".nav .depth1 >li").mouseenter(function(){
        //     $('header').addClass('on');

@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>(주)대한파크골프시스템</title>
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/layout.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="../js/common.js"></script>
+    <!-- swiper cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.4/swiper-bundle.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.4/swiper-bundle.min.js"></script>
+</head>
+
+<body>
+    <div class="site">
+        <!-- 헤더 -->
+        <header id="header">
+            <!-- PC헤더 -->
+            <div class="header">
+                <div class="inner">
+                    <h1 class="logo"><a href="#">(주)대한파크골프시스템</a></h1>
+                    <nav class="nav">
+                        <ul class="depth1">
+                            <li><a href="./intro.html">회사소개</a>
+                                <ul class="depth2">
+                                    <li>
+                                        <a href="./intro.html">회사소개</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li><a href="#">W5K</a>
+                                <ul class="depth2">
+                                    <li>
+                                        <a href="#">브랜드소개</a>
+                                    </li>
+                                    <li> <a href="#">스크린파크골프시스템</a></li>
+                                    <li> <a href="#">홈파크골프시스템</a></li>
+                                    <li> <a href="#">도입사례</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li><a href="#">파세지아타</a></li>
+                            <li><a href="#">골프아카데미</a></li>
+                            <li><a href="#">용품구입</a></li>
+                            <li><a href="#">공지사항</a>
+                                <ul class="depth2">
+                                    <li><a href="#">공지사항</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <!-- 모바일헤더 -->
+            <div class="mobileHeader">
+                <h2 class="logo"><a href="#">(주)대한파크골프시스템</a></h2>
+                <div class="mBtn">
+                    <span class="bar1"></span>
+                    <span class="bar2"></span>
+                    <span class="bar3"></span>
+                </div>
+                <nav class="lnb">
+                    <div class="inner">
+                        <ul class="mlnb">
+                            <li><a href="#" class="depth"><span>회사소개</span> <i></i></a>
+                                <ul class="lnbSub">
+                                    <li><a href="#">회사소개</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#" class="depth"><span>W5K</span><i></i></a>
+                                <ul class="lnbSub">
+                                    <li><a href="#">브랜드소개</a></li>
+                                    <li><a href="#">스크린파크골프시스템</a></li>
+                                    <li><a href="#">홈파크골프시스템</a></li>
+                                    <li><a href="#">도입사례</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#" class="depth">파세지아타</a>
+                            </li>
+                            <li><a href="#" class="depth">골프아카데미</a>
+                            </li>
+                            <li><a href="#" class="depth">용품구입</a>
+                            </li>
+                            <li><a href="#" class="depth"><span>공지사항</span><i></i></a>
+                                <ul class="lnbSub">
+                                    <li><a href="#">공지사항</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </header>
+        <script>
+            $(function () {
+                $(".header").addClass('fixed');
+                $('.nav .depth1 > li:nth-child(2) > a').addClass('on');
+                $('.nav .depth1 > li:nth-child(2) > a').addClass('active');
+                $('.nav .depth1 > li:nth-child(2) > .depth2 > li:nth-child(1) > a').addClass('act');
+            });
+        </script>
+        <main id="brand">
+            <!-- 위치 -->
+            <section id="visual" class="subVisual">
+                <div class="areaBox">
+                    <div class="area">
+                        <div class="location">
+                            <ul>
+                                <li> <a href="../index.html"> <i class="home"></i></a></li>
+                                <li>W5K</li>
+                                <li>브랜드소개</li>
+                            </ul>
+                        </div>
+                        <h2 class="visualTitle">W5K</h2>
+                    </div>
+                </div>
+            </section>
+            <!-- 콘텐츠 -->
+            <section id="contain1" class="contain1">
+                <div class="wrap">
+                    <div class="flex">
+                        <div class="subTitle">
+                            <div class="tit">ABOUT</div>
+                            <h3 class="title">W5K</h3>
+                            <span>브랜드소개</span>
+                        </div>
+                        <div class="subText">
+                            <p>파크골프 18홀 이용시 5km를 걷는 것과 같은 운동 효과가
+                                있다는 것에 찾안한 당사의 고유 브랜드인 W5K는 2018년
+                                중소기업청 연구개발 사업을 통해 기술을 축적하여
+                                지속적인 고도화 및 제품 사업화를 추진하고 있습니다.</p>
+                        </div>
+                        <div class="ciBox">
+                            <div class="img ci1">
+                                <img src="../img/ci1.webp" alt="w5k ci">
+                            </div>
+                            <div class="img ci2">
+                                <img src="../img/ci2.webp" alt="w5k ci">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="contain2" class="content2">
+                <div class="wrap">
+                    <div class="flex">
+                      <div class="text">
+                        <h3>파크골프 왜 좋을까?</h3>
+                        <p>파크골프로 기대해볼 수 있는 효과</p>
+                      </div>
+                      <div class="content">
+                        <div class="brandbox">
+                            <div class="box-wrap">
+                            <div class="img"> <img src="../img/brand-advantages1.svg" alt="커뮤니케이션효과"></div>
+                            <div class="tit">커뮤니케이션 효과
+                            </div>
+                            <div class="text"><p>같은 세대의 커뮤니티 활성화 및 가족, 이웃 지역 사회와 활발한 교류와 소통 증진</p></div>
+                        </div>
+                        </div>
+                      </div>
+                      <div class="content">
+                        <div class="brandbox">
+                            <div class="box-wrap">
+                            <div class="img"> <img src="../img/brand-advantages2.svg" alt="건강효과"></div>
+                            <div class="tit">건강 효과
+                            </div>
+                            <div class="text"><p>가벼운 산책과 근력 운동을 통한 유산소 운동으로 건강증진 및 의료비 절감</p></div>
+                        </div>
+                        </div>
+                      </div>
+                      <div class="content">
+                        <div class="brandbox">
+                            <div class="box-wrap">
+                            <div class="img"> <img src="../img/brand-advantages3.svg" alt="교육효과"></div>
+                            <div class="tit">교육 효과
+                            </div>
+                            <div class="text"><p>스포츠 매너쉽 함양 및 공동 운동을 통한 교육적 효과</p></div>
+                        </div>
+                        </div>
+                      </div>
+                      <div class="content">
+                        <div class="brandbox">
+                            <div class="box-wrap">
+                            <div class="img"> <img src="../img/brand-advantages4.svg" alt="관광효과"></div>
+                            <div class="tit">관광 효과
+                            </div>
+                            <div class="text"><p>여행과 운동을 즐기는 액티브 시니어 계층의 관광 유발 효과</p></div>
+                        </div>
+                        </div>
+                      </div>
+                      <div class="content">
+                        <div class="brandbox">
+                            <div class="box-wrap">
+                            <div class="img"> <img src="../img/brand-advantages5.svg" alt="환경효과"></div>
+                            <div class="tit">환경 효과
+                            </div>
+                            <div class="text"><p>친환경적 프로그램으로 공원, 하천, 유휴지 등 활용으로 각종 교육, 복지시설 활용도 증대</p></div>
+                        </div>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <!-- footer -->
+        <footer id="footer">
+            <div class="footer">
+                <div class="wrap">
+                    <div class="content">
+                        <div class="logo">
+                            <h2>(주)대한파크골프시스템</h2>
+                        </div>
+                        <div class="con">
+                            <p>(42250)대전광역시 서구 청사로 136 </p>
+                            <p>사업자등록번호 : 617-86-10993 </p>
+                            <p>대표전화 : 010 - 2562 - 5532</p>
+                            <p>이메일 : kspgs@naver.com </p>
+                            <p>대표 : 최상호</p>
+                        </div>
+                    </div>
+                    <div class="copy">
+                        <p>Copyright by © kpgs</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>

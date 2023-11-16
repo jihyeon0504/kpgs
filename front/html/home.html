@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>(주)대한파크골프시스템</title>
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/layout.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="../js/common.js"></script>
+    <!-- swiper cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.4/swiper-bundle.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.4/swiper-bundle.min.js"></script>
+</head>
+
+<body>
+    <div class="site">
+        <!-- 헤더 -->
+        <header id="header">
+            <!-- PC헤더 -->
+            <div class="header">
+                <div class="inner">
+                    <h1 class="logo"><a href="#">(주)대한파크골프시스템</a></h1>
+                    <nav class="nav">
+                        <ul class="depth1">
+                            <li><a href="./intro.html">회사소개</a>
+                                <ul class="depth2">
+                                    <li>
+                                        <a href="./intro.html">회사소개</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li><a href="./brand.html">W5K</a>
+                                <ul class="depth2">
+                                    <li>
+                                        <a href="./brand.html">브랜드소개</a>
+                                    </li>
+                                    <li> <a href="./screen.html">스크린파크골프시스템</a></li>
+                                    <li> <a href="./home.html">홈파크골프시스템</a></li>
+                                    <li> <a href="#">도입사례</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li><a href="#">파세지아타</a></li>
+                            <li><a href="#">골프아카데미</a></li>
+                            <li><a href="#">용품구입</a></li>
+                            <li><a href="#">공지사항</a>
+                                <ul class="depth2">
+                                    <li><a href="#">공지사항</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <!-- 모바일헤더 -->
+            <div class="mobileHeader">
+                <h2 class="logo"><a href="#">(주)대한파크골프시스템</a></h2>
+                <div class="mBtn">
+                    <span class="bar1"></span>
+                    <span class="bar2"></span>
+                    <span class="bar3"></span>
+                </div>
+                <nav class="lnb">
+                    <div class="inner">
+                        <ul class="mlnb">
+                            <li><a href="#" class="depth"><span>회사소개</span> <i></i></a>
+                                <ul class="lnbSub">
+                                    <li><a href="#">회사소개</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="./brand.html" class="depth"><span>W5K</span><i></i></a>
+                                <ul class="lnbSub">
+                                    <li><a href="./brand.html">브랜드소개</a></li>
+                                    <li><a href="./screen.html">스크린파크골프시스템</a></li>
+                                    <li><a href="./home.html">홈파크골프시스템</a></li>
+                                    <li><a href="#">도입사례</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#" class="depth">파세지아타</a>
+                            </li>
+                            <li><a href="#" class="depth">골프아카데미</a>
+                            </li>
+                            <li><a href="#" class="depth">용품구입</a>
+                            </li>
+                            <li><a href="#" class="depth"><span>공지사항</span><i></i></a>
+                                <ul class="lnbSub">
+                                    <li><a href="#">공지사항</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </header>
+        <script>
+            $(function () {
+                $(".header").addClass('fixed');
+                $('.nav .depth1 > li:nth-child(2) > a').addClass('on');
+                $('.nav .depth1 > li:nth-child(2) > a').addClass('active');
+                $('.nav .depth1 > li:nth-child(2) > .depth2 > li:nth-child(3) > a').addClass('act');
+            });
+        </script>
+        <main id="home">
+            <!-- 위치 -->
+            <section id="visual" class="subVisual">
+                <div class="areaBox">
+                    <div class="area">
+                        <div class="location">
+                            <ul>
+                                <li> <a href="../index.html"> <i class="home"></i></a></li>
+                                <li>W5K</li>
+                                <li>홈파크골프시스템</li>
+                            </ul>
+                        </div>
+                        <h2 class="visualTitle">홈파크골프시스템</h2>
+                    </div>
+                </div>
+            </section>
+            <!-- 콘텐츠 -->
+            <section id="contain1" class="contain1">
+                <div class="wrap">
+                    <div class="flex">
+                        <div class="subTitle">
+                            <div class="tit">ABOUT</div>
+                            <h3 class="title">홈파크골프시스템</h3>
+                            <span>시스템소개</span>
+                        </div>
+                        <div class="subText">
+                            <p>홈파크골프시스템은 스크린파크골프 시나리오 기반으로 집에서 가족, 친구들과 함께 즐길 수 있는 흥미를 제공합니다.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="contain2" class="contain2">
+                <div class="wrap">
+                    <div class="flex">
+                        <div class="text">
+                            <h3>홈파크골프시스템</h3>
+                        </div>
+                        <div class="content">
+                            <div class="cont">
+                                <div class="con">
+                                    <div class="img"><img src="../img/homeicon1.svg" alt="모바일지원"></div>
+                                    <div class="tit">모바일지원</div>
+                                    <div class="text">
+                                        <p>스크린 파크 골프 시나리오 기반
+                                            홈파크골프 모바일 플랫폼 개발</p>
+                                            <p class="ing">(준비중)</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cont">
+                                <div class="con">
+                                    <div class="img"><img src="../img/homeicon2.svg" alt="모바일지원"></div>
+                                    <div class="tit">주요사항</div>
+                                    <div class="text">
+                                        <p>온라인, 오프라인 모드 제공</p>
+                                            <p>싱글 및 다인 플레이 모드 제공</p>
+                                            <p>시니어층 및 가족, 친구, 연인 등</p>
+                                            <p>함께 플레이 가능하며, 온라인 대회 이벤트 가능</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cont">
+                                <div class="con">
+                                    <div class="img"><img src="../img/homeicon3.svg" alt="모바일지원"></div>
+                                    <div class="tit">지원사항</div>
+                                    <div class="text">
+                                       <p>블루투스 기반 센서가 탑재된 파크 골프채 적용</p>
+                                       <p>스윙궤적 인식, 비거리 가시화</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <!-- footer -->
+        <footer id="footer">
+            <div class="footer">
+                <div class="wrap">
+                    <div class="content">
+                        <div class="logo">
+                            <h2>(주)대한파크골프시스템</h2>
+                        </div>
+                        <div class="con">
+                            <p>(42250)대전광역시 서구 청사로 136 </p>
+                            <p>사업자등록번호 : 617-86-10993 </p>
+                            <p>대표전화 : 010 - 2562 - 5532</p>
+                            <p>이메일 : kspgs@naver.com </p>
+                            <p>대표 : 최상호</p>
+                        </div>
+                    </div>
+                    <div class="copy">
+                        <p>Copyright by © kpgs</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
