@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8" />
+    <!-- 검색표준화 -->
+    <link rel="canonical" href="url" />
+    <meta property="og:title" content="대한파크골프시스템" />
+    <meta property="og:description" content="대한파크골프시스템 관리자페이지" />
+    <meta name="description" content="대한파크골프시스템 관리자페이지" />
+    <title>(주)대한파크골프시스템 관리자</title>
+    <link media="screen" rel="stylesheet" type="text/css" href="../../css/admin.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="../../js/common.js"></script>
+</head>
+
+<body>
+    <header id="header">
+        <section class="header">
+            <h1> <a href="../member/index.html"><strong>대한파크골프시스템</strong>관리자</a></h1>
+            <div class="lnb">
+                <span class="hello">
+                    <div class="ico"><a href="#"><img src="../../img/kpgs-type2.svg" alt=""></a></div>
+                    <div class="name"><strong>Hello,</strong> <span>Administator</span></div>
+                </span>
+                <span class="memb">
+                    <div class="skip"><strong>관리자님</strong> <span>접속하셨습니다.</span></div>
+                    <a href="javascript:;" onclick="openModal('lout11')"><i class="fas fa-power-off"></i><span
+                            class="skip">로그아웃</span></a>
+                </span>
+            </div>
+        </section>
+        <aside id="gnb">
+            <div class="gnb-btn"></div>
+            <nav class="gnb">
+                <div class="depth1">
+                    <div class="dp1"> <a href="../member/index.html" class="da1">
+                            <i><img src="../../img/icon/dash-ico02.svg" alt="관리자관리"></i>
+                            <span>관리자관리</span></a>
+                        <ul class="depth2">
+                            <li><a href="../member/index.html">관리자관리</a></li>
+                        </ul>
+                    </div>
+                    <div class="dp1"> <a href="../board/index.html" class="da1"><i><img
+                                    src="../../img/icon/dash-ico04.svg" alt="게시판관리"></i>
+                            <span>게시판관리</span>
+                        </a>
+                        <ul class="depth2">
+                            <li><a href="../board/index.html">공지사항</a></li>
+                        </ul>
+                    </div>
+            </nav>
+        </aside>
+        <script type="text/javascript">
+            //<![CDATA[
+            $(function () {
+                $(".gnb .dp1").click(function () {
+                    var list = $(this).index();
+                    $(".gnb .dp1").removeClass("act");
+                    $(this).addClass("act");
+
+                    $(".depth2").hide();
+                    $(".depth2").eq(list).show();
+                });
+                $(".gnb-btn").click(function () {
+                    $("body").stop().toggleClass("min");
+                    return false;
+                });
+            });
+            //]]>
+        </script>
+    </header>
+    <script>
+        $(function () {
+            $(".dp1:nth-child(1)").addClass('act');
+            $(".dp1:nth-child(1) .depth2").show();
+            $(".dp1:nth-child(1) .depth2 li:nth-child(1)").addClass('act');
+        });
+    </script>
+    <main id="contain">
+        <section class="location">
+            <div class="titles">
+                <h2>회원관리</h2>
+            </div>
+        </section>
+        <section class="contain">
+            <div class="srch">
+                <form>
+                    <fieldset>
+                        <input type="text" placeholder="아이디 또는 이름으로 검색해주세요." class="ip-txt">
+                        <button type="submit" class="bt bt-srh"><i class="fas fa-search"></i> <span
+                                class="skip">검색</span></button>
+                    </fieldset>
+                </form>
+                <div class="buttons">
+                    <div class="button">
+                        <button type="button" class="bt bt-excell">엑셀 다운로드</button>
+                    </div>
+                    <div class="button">
+                        <button type="button" class="bt bt-add" onclick="openModal('add101')">추가</button>
+                    </div>
+                    <div class="button">
+                        <button type="button" class="bt bt-del" onclick="openModal('cal001')">삭제</button>
+                    </div>
+                </div>
+            </div>
+            <div class="tbl">
+                <table class="col">
+                    <colgroup>
+                        <col class="w80">
+                        <col class="w80">
+                        <col>
+                        <col class="w200">
+                        <col>
+                    </colgroup>
+                    <thead>
+                        <tr>
+                            <th><input type="checkbox" id="allcheck" class="checknum" name="allcheck"
+                                    onclick='selectAll(this)'> <label for="allcheck"><span
+                                        class="skip">전체선택</span></label></th>
+                            <th>번호</th>
+                            <th>아이디</th>
+                            <th>이름</th>
+                            <th>비밀번호</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><input type="checkbox" id="check1" class="checknum unitcheck" name="check"
+                                    onclick='checkSelectAll()'> <label for="check1"><span class="skip">1번</span></label>
+                            </td>
+                            <td>1</td>
+                            <td class="tal">abcd</td>
+                            <td>김철수</td>
+                            <td class="tal">aaa1234</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="pageing">
+                    <div class="page">
+                        <a href="#" class="pag pprev"><i class="ico-pprev"></i><span class="skip">처음</span></a>
+                        <a href="#" class="pag prev"><i class="ico-prev"></i><span class="skip">이전</span></a>
+                        <strong class="num">1</strong>
+                        <a href="#" class="num">2</a>
+                        <a href="#" class="num">3</a>
+                        <a href="#" class="num">4</a>
+                        <a href="#" class="num">5</a>
+                        <a href="#" class="num">6</a>
+                        <a href="#" class="num">7</a>
+                        <a href="#" class="num">8</a>
+                        <a href="#" class="num">9</a>
+                        <a href="#" class="num">10</a>
+                        <a href="#" class="pag next"><i class="ico-next"></i><span class="skip">다음</span></a>
+                        <a href="#" class="pag nnext"><i class="ico-nnext"></i><span class="skip">마지막</span></a>
+                    </div>
+                </div>
+                <div class="nocontent"><i class="ico"></i><span>현재 관리자 회원이 없습니다.</span></div>
+            </div>
+        </section>
+    </main>
+    <footer id="footer">
+        <cite class="cite"><strong>© IEETU </strong> Corp All Rights Reserved</cite>
+    </footer>
+</body>
+
+</html>
