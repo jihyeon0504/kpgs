@@ -1,4 +1,5 @@
 @charset "utf-8";
+
 #intro .subVisual { background: url(../img/intro.webp); } 
 #brand .subVisual { background: url(../img/brand.webp); } 
 #screen .subVisual { background: url(../img/screenMain.webp); } 
@@ -102,18 +103,18 @@
 
 
 
-.board .tit { font-size: 2.5rem; width: 100%; padding: 30px 0; word-break: keep-all; font-weight: 600; letter-spacing: -0.75px; font-family: SUITE !important; color: #333; line-height: 1.4; } 
-.board .table { border-top: 2px solid #555; border-bottom: 2px solid #555; } 
-.board .table .col { width:100%; border-collapse:collapse; table-layout:fixed } 
-.board .table .col thead { display:none } 
-.board .table .col tbody tr { border-bottom:1px solid #ddd } 
-.board .table .col tbody tr:hover { background-color:#f8f8f8 } 
-.board .table .col tbody td { padding:30px 0; font-size:16px; text-align:center; border:0; color:#333; font-weight: 600; } 
-.board .table .col tbody td.dat { color:#8b8b8b; font-size: 16px; text-align: left; } 
-.board .table .col tbody td a { display:block; text-align:left; text-overflow:ellipsis; overflow:hidden; white-space:nowrap; word-break:break-all; transition: all 0.2s; } 
-.board .table .col tbody td a:hover { text-decoration: underline; } 
-.board .table .col tbody td .tag { padding: 7px 10px; border-radius: 30px; font-weight: 600; letter-spacing: -0.75px; } 
-.board .table .col tbody td .notice { background-color: #555; color: #fff; } 
+#notice .board .tit { font-size: 2.5rem; width: 100%; padding: 30px 0; word-break: keep-all; font-weight: 600; letter-spacing: -0.75px; font-family: SUITE !important; color: #333; line-height: 1.4; } 
+#notice .board .table { border-top: 2px solid #555; border-bottom: 2px solid #555; } 
+#notice .board .table .col { width:100%; border-collapse:collapse; table-layout:fixed } 
+#notice .board .table .col thead { display:none } 
+#notice .board .table .col tbody tr { border-bottom:1px solid #ddd } 
+#notice .board .table .col tbody tr:hover { background-color:#f8f8f8 } 
+#notice .board .table .col tbody td { padding:30px 0; font-size:16px; text-align:center; border:0; color:#333; font-weight: 600; } 
+#notice .board .table .col tbody td.dat { color:#8b8b8b; font-size: 16px; text-align: left; } 
+#notice .board .table .col tbody td a { display:block; text-align:left; text-overflow:ellipsis; overflow:hidden; white-space:nowrap; word-break:break-all; transition: all 0.2s; } 
+#notice .board .table .col tbody td a:hover { text-decoration: underline; } 
+#notice .board .table .col tbody td .tag { padding: 7px 10px; border-radius: 30px; font-weight: 600; letter-spacing: -0.75px; } 
+#notice .board .table .col tbody td .notice { background-color: #555; color: #fff; } 
 
 #notice .board .table .col tbody tr:hover { background-color:inherit } 
 #notice .content .con { min-height: 400px; } 
@@ -164,7 +165,7 @@
  #home #contain2 .content .cont .con .tit { font-size: 24px; } 
  #contain2 .brandbox .box-wrap .text p { font-size: 18px; } 
  #case #contain2 .caseWrap { padding: 0 10px; } 
- .board { padding: 0 10px; } 
+ .board { padding: 0 10px; width: 100%; } 
  }
 @media screen and (max-width:1200px){
  .subVisual .areaBox .area .visualTitle { font-size: 36px; } 
@@ -183,6 +184,8 @@
  #home #contain2 .content .cont { min-width: auto; width: 100%; min-height: 100%; } 
 #home #contain2 .content .cont .con .text { max-width: 100%; padding: 0 30px 10px; } 
 #case #contain2 .caseWrap .caseBox { width: 100%; } 
+#notice .board .table .col tbody td { font-size: 14px; } 
+#notice .board .table .col tbody td.dat { font-size: 14px; } 
  }
  @media screen and (max-width:375px){
  #contain1 .subTitle .tit { font-size: 14px; } 

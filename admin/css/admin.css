@@ -287,10 +287,10 @@ table.col .bt-view:hover { text-decoration: underline; box-shadow: 8px 8px 20px 
 .modal-boxed .modal-alert .footer .btn .bt-none:hover { border:1px solid #000; background:#000 } 
 .modal-boxed .modal-alert .footer .buttons .bt { width: 100%; } 
 .modal-boxed .modal-alert .footer .buttons { display: flex; flex-direction: row; align-items: center; width: 100%; gap: 10px; } 
-.modal-boxed .modal-alert .footer .buttons .bt-okay { color:#333; border:1px solid #ddd; background:#fff } 
-.modal-boxed .modal-alert .footer .buttons .bt-okay:hover { border:1px solid #777 } 
-.modal-boxed .modal-alert .footer .buttons .bt-no { color:#fff; border:1px solid #44844A; background:#44844A } 
-.modal-boxed .modal-alert .footer .buttons .bt-no:hover { border:1px solid #0C4721; background:#0C4721 } 
+.modal-boxed .modal-alert .footer .buttons .bt-okay {color:#fff; border:1px solid #44844A; background:#44844A} 
+.modal-boxed .modal-alert .footer .buttons .bt-okay:hover { border:1px solid #0C4721; background:#0C4721 } 
+.modal-boxed .modal-alert .footer .buttons .bt-no { color:#333; border:1px solid #ddd; background:#fff } 
+.modal-boxed .modal-alert .footer .buttons .bt-no:hover { border:1px solid #555;} 
 .modal-boxed .button .bt { display:inline-block; padding:0 24px; height:40px; line-height:40px; font-size:14px; font-weight:600; box-shadow:0 0 2px 0 rgb(0 0 0 / 2%); transition:all .2s; border-radius:2px } 
 .modal-boxed .button .bt:hover { box-shadow:8px 8px 20px 0 rgb(0 0 0 / 10%) } 
 .modal-boxed .button .bt-okay { color:#fff; border:1px solid #ddd; background:#219653; width:100%; border-radius:8px } 

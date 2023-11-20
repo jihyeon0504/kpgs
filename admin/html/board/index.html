@@ -99,7 +99,7 @@
                         <button type="button" class="bt bt-excell">엑셀 다운로드</button>
                     </div>
                     <div class="button">
-                        <button type="button" class="bt bt-add" onclick="openModal('add101')">추가</button>
+                        <button type="button" class="bt bt-add" onclick="location.href='view.html'">추가</button>
                     </div>
                     <div class="button">
                         <button type="button" class="bt bt-del" onclick="openModal('cal001')">삭제</button>
@@ -163,6 +163,20 @@
     <footer id="footer">
         <cite class="cite"><strong>© IEETU </strong> Corp All Rights Reserved</cite>
     </footer>
+    <!-- 삭제 확인 -->
+    <section class="modal-boxed" id="cal001">
+        <div class="modal-alert w400">
+            <article class="article">
+                <div class="con"> 삭제 처리 하시겠습니까? </div>
+            </article>
+            <footer class="footer">
+                <div class="buttons">
+                    <button type="button" class="bt bt-no" onclick="closeModal('cal001')">취소</button>
+                    <button type="button" class="bt bt-okay" onclick="closeModal('cal001')">확인</button>
+                </div>
+            </footer>
+        </div>
+    </section>
 </body>
 
 </html>

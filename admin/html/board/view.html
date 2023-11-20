@@ -87,13 +87,14 @@
         </section>
         <section class="contain">
             <article class="detail">
-                    <div class="buttons">
-                        <div class="button">
-                            <button type="button" class="bt bt-del" onclick="openModal('cal001')">삭제</button>
-                        </div>
-                       <div class="button"> <button type="button" class="bt bt-save" onclick="openModal('save1')">저장</button></div>
-                       
+                <div class="buttons">
+                    <div class="button">
+                        <button type="button" class="bt bt-del" onclick="openModal('cal001')">삭제</button>
                     </div>
+                    <div class="button"> <button type="button" class="bt bt-save"
+                            onclick="openModal('save1')">저장</button></div>
+
+                </div>
                 <div class="tbl">
                     <table>
                         <colgroup>
@@ -155,20 +156,20 @@
             });
         });
     </script>
-<!-- 저장 확인 모달 -->
-<section class="modal-boxed" id="save1">
-    <div class="modal-alert w400">
-        <article class="article">
-            <div class="con"> 저장 하시겠습니까? </div>
-        </article>
-        <footer class="footer">
-            <div class="buttons">
-                <button type="button" class="bt bt-okay" onclick="closeModal('save1')">확인</button>
-                <button type="button" class="bt bt-no" onclick="closeModal('save1')">취소</button>
-            </div>
-        </footer>
-    </div>
-</section>
+    <!-- 저장 확인 모달 -->
+    <section class="modal-boxed" id="save1">
+        <div class="modal-alert w400">
+            <article class="article">
+                <div class="con"> 저장 하시겠습니까? </div>
+            </article>
+            <footer class="footer">
+                <div class="buttons">
+                    <button type="button" class="bt bt-no" onclick="closeModal('save1')">취소</button>
+                    <button type="button" class="bt bt-okay" onclick="closeModal('save1')">확인</button>
+                </div>
+            </footer>
+        </div>
+    </section>
     <!-- 삭제 확인 -->
     <section class="modal-boxed" id="cal001">
         <div class="modal-alert w400">
@@ -177,8 +178,8 @@
             </article>
             <footer class="footer">
                 <div class="buttons">
-                    <button type="button" class="bt bt-okay" onclick="closeModal('cal001')">확인</button>
                     <button type="button" class="bt bt-no" onclick="closeModal('cal001')">취소</button>
+                    <button type="button" class="bt bt-okay" onclick="closeModal('cal001')">확인</button>
                 </div>
             </footer>
         </div>
